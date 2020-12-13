@@ -1,3 +1,10 @@
 @import './general/reset';
 @import './general/responsive';
 @import './general/variables';
+
+//  components
+@import './components/header';
+
+html {
+  background-color: red;
+}
