@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: opening 0.4s ease-in;
   // text
   .__intro {
     display: flex;
@@ -32,7 +33,6 @@
   //  img
   .__images {
     margin-right: 5rem;
-    background: linear-gradient(#eceaea, #d1d1d1);
     position: relative;
 
     .tattoo1 {
@@ -43,6 +43,8 @@
     .tattoo2 {
       z-index: 1;
       top: 30%;
+      animation: rotate-img 1s ease-in-out;
+      transform-origin: bottom;
     }
 
     .tattoo3 {
@@ -50,13 +52,17 @@
       z-index: 3;
       left: 10%;
       top: 65%;
+      animation: 1s move-tattoos ease-in-out;
+      transform-origin: right;
     }
+    //  tattoo
     .tattoo {
       width: 30vw;
       height: 45vh;
       position: absolute;
       bottom: 0;
       right: -6%;
+      // animation: move-tattoos 1s ease-in-out;
     }
   }
 }

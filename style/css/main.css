@@ -12,6 +12,21 @@ ul {
 a {
   text-decoration: none; }
 
+@keyframes opening {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes move-tattoos {
+  from {
+    transform: translateY(10%); }
+  to {
+    transform: translateY(0%); } }
+@keyframes rotate-img {
+  from {
+    transform: rotateY(-180deg); }
+  to {
+    transform: rotateY(0deg); } }
 .header .nav {
   width: 90%;
   margin: auto;
@@ -33,7 +48,8 @@ a {
   margin-left: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  animation: opening 0.4s ease-in; }
   #hero .__intro {
     display: flex;
     flex-direction: column;
@@ -54,7 +70,6 @@ a {
       border-bottom: 1px solid black; }
   #hero .__images {
     margin-right: 5rem;
-    background: linear-gradient(#eceaea, #d1d1d1);
     position: relative; }
     #hero .__images .tattoo1 {
       object-fit: cover;
@@ -62,12 +77,16 @@ a {
       height: 80vh; }
     #hero .__images .tattoo2 {
       z-index: 1;
-      top: 30%; }
+      top: 30%;
+      animation: rotate-img 1s ease-in-out;
+      transform-origin: bottom; }
     #hero .__images .tattoo3 {
       object-fit: cover;
       z-index: 3;
       left: 10%;
-      top: 65%; }
+      top: 65%;
+      animation: 1s move-tattoos ease-in-out;
+      transform-origin: right; }
     #hero .__images .tattoo {
       width: 30vw;
       height: 45vh;
