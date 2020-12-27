@@ -5,15 +5,21 @@
 }
 
 @include test {
-  //   burger menu
-  // .burger-menu:hover {
-  //   transform: translate(100%);
-  // }
+  .burger-menu {
+    position: relative;
+    display: block;
+    color: white;
+    background: transparent;
+    z-index: 5;
+    margin: 2rem;
+  }
+
   .burger-menu span {
     padding: 0.2rem 2rem;
     background-color: $gray-text-color;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
     display: block;
+    transition: transform 0.5s ease;
   }
   //  nav links
   .__links {
@@ -25,8 +31,9 @@
     top: 0;
     left: 100%;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    // transition: transform 1s ease;
+    transition: transform 1s ease;
     .__link {
       .__item {
         color: white;
@@ -51,6 +58,7 @@
   //  nav open
   .nav-open {
     transform: translateX(-100%);
+    color: wheat;
   }
   .toggle .line2 {
     // background: white;
