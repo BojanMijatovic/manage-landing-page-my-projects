@@ -6,7 +6,92 @@
 html {
   font-size: 62.5%; }
 
-h1 {
-  font-size: 2.4rem; }
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+@keyframes opening {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes move-tattoos {
+  from {
+    transform: translateY(10%); }
+  to {
+    transform: translateY(0%); } }
+@keyframes rotate-img {
+  from {
+    transform: rotateY(-180deg); }
+  to {
+    transform: rotateY(0deg); } }
+.header .nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem; }
+  .header .nav .__links {
+    display: flex;
+    justify-content: space-around; }
+    .header .nav .__links .__link {
+      padding: 1rem; }
+      .header .nav .__links .__link .__item {
+        font-size: 1.4rem; }
+
+#hero {
+  min-height: 90vh;
+  width: 95%;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: opening 0.4s ease-in; }
+  #hero .__intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    #hero .__intro .title {
+      font-size: 3rem;
+      margin-bottom: 3rem; }
+    #hero .__intro .subtitle {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      margin: 3rem; }
+    #hero .__intro a {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      color: black;
+      border-bottom: 1px solid black; }
+  #hero .__images {
+    margin-right: 5rem;
+    position: relative; }
+    #hero .__images .tattoo1 {
+      object-fit: cover;
+      width: 60vw;
+      height: 80vh; }
+    #hero .__images .tattoo2 {
+      z-index: 1;
+      top: 30%;
+      animation: rotate-img 1s ease-in-out;
+      transform-origin: bottom; }
+    #hero .__images .tattoo3 {
+      object-fit: cover;
+      z-index: 3;
+      left: 10%;
+      top: 65%;
+      animation: 1s move-tattoos ease-in-out;
+      transform-origin: right; }
+    #hero .__images .tattoo {
+      width: 30vw;
+      height: 45vh;
+      position: absolute;
+      bottom: 0;
+      right: -6%; }
 
 /*# sourceMappingURL=main.css.map */
