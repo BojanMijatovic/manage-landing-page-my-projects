@@ -1,35 +1,4 @@
 //  colors
-$second-color: #906272;
-$main-color: #414141;
-$gray-text-color: #525252;
 
 //  animations
 //  open section
-@keyframes opening {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-//  move tattoos
-@keyframes move-tattoos {
-  from {
-    transform: translateY(10%);
-  }
-  to {
-    transform: translateY(0%);
-  }
-}
-
-// rotate
-@keyframes rotate-img {
-  from {
-    transform: rotateY(-180deg);
-  }
-  to {
-    transform: rotateY(0deg);
-  }
-}
