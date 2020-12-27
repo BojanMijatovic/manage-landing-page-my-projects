@@ -6,6 +6,9 @@
 
 @include test {
   //   burger menu
+  // .burger-menu:hover {
+  //   transform: translate(100%);
+  // }
   .burger-menu span {
     padding: 0.2rem 2rem;
     background-color: $gray-text-color;
@@ -23,7 +26,7 @@
     left: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // transition: transform 1s ease;
     .__link {
       .__item {
         color: white;
