@@ -2,9 +2,10 @@
 @import './general/reset';
 
 //  components
+@import './components/red';
+@import './components/gallery';
 @import './components/header';
 @import './components/hero';
-@import './components/gallery';
 
 // responsive
 @import './general/responsive';
