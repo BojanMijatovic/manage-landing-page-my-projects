@@ -1,7 +1,9 @@
-@import './general/reset';
-@import './general/responsive';
 @import './general/variables';
+@import './general/reset';
 
 //  components
 @import './components/header';
 @import './components/hero';
+
+// responsive
+@import './general/responsive';

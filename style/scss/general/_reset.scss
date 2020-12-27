@@ -17,8 +17,31 @@ a {
 }
 
 //  media
+//medium
+@mixin media-md {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+// large
 @mixin media-lg {
-  @media screen and(min-width: 1044px) {
+  @media screen and(min-width: 1200px) {
+    @content;
+  }
+}
+
+//  for test
+// @media screen and(max-width:768px ) {
+//   .burger-menu span {
+//     padding: 0.2rem 2rem;
+//     background-color: $gray-text-color;
+//   }
+// }
+
+@mixin test {
+  //  for test
+  @media screen and(max-width:768px ) {
     @content;
   }
 }
