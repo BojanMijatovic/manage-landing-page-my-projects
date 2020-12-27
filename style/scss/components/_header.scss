@@ -1,0 +1,49 @@
+.header {
+  // nav
+  .nav {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    // logo
+    .logo {
+      .img-logo {
+        width: 75%;
+        height: 50%;
+        margin-top: 0.5rem;
+      }
+    }
+    // links
+    .__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      background-color: $very-light-gray;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 4;
+      top: 0;
+      left: 100%;
+      // transition: transform 1s ease;
+      //  single link
+      .__link {
+        //  item
+        .__item {
+          color: $very-dark-blue;
+          font-weight: 500;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    // burger-menu
+    .burger-menu span {
+      padding: 0.2rem 1.4rem;
+      background-color: $very-dark-blue;
+      margin: 0.5rem 0;
+      display: block;
+    }
+  }
+}
