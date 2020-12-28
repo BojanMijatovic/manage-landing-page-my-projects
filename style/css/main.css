@@ -6,7 +6,8 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Be Vietnam', sans-serif; }
+  font-family: 'Be Vietnam', sans-serif;
+  scroll-behavior: smooth; }
 
 ul {
   list-style: none; }
@@ -16,33 +17,86 @@ a {
 
 .header .nav {
   display: flex;
-  margin: 1rem;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  margin-top: 1rem;
+  position: relative; }
   .header .nav .logo .img-logo {
     width: 75%;
     height: 50%;
-    margin-top: 0.5rem; }
+    margin: 1rem 0 0 1rem; }
   .header .nav .__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #fafafa;
+    background-color: green;
     position: fixed;
     width: 100%;
     height: 100%;
     z-index: 4;
     top: 0;
-    left: 100%; }
+    left: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease; }
     .header .nav .__links .__link .__item {
       color: #1d1e25;
       font-weight: 500;
-      font-size: 1.4rem; }
-  .header .nav .burger-menu span {
-    padding: 0.2rem 1.4rem;
-    background-color: #1d1e25;
-    margin: 0.5rem 0;
-    display: block; }
+      font-size: 2rem;
+      text-decoration: underline; }
+  .header .nav .burger-menu {
+    margin-right: 1rem;
+    position: relative;
+    z-index: 20; }
+    .header .nav .burger-menu span {
+      padding: 0.2rem 1.4rem;
+      background-color: #1d1e25;
+      margin: 0.4rem 0;
+      display: block;
+      transition: all ease 0.5s; }
+  .header .nav .nav-open {
+    transform: translateX(-100%); }
+  .header .nav .toggle .line1 {
+    transform: rotateZ(45deg) translateY(280%);
+    background: #1d1e25; }
+  .header .nav .toggle .line2 {
+    opacity: 0; }
+  .header .nav .toggle .line3 {
+    transform: rotateZ(-45deg) translateY(-300%);
+    background: #1d1e25; }
+
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left; }
+  #pricing .img {
+    margin: 4rem 1.5rem 4rem 0;
+    width: 100%;
+    height: 100%; }
+  #pricing .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 3rem;
+    text-align: center; }
+    #pricing .text .title {
+      font-size: 3.3rem;
+      color: #242d52;
+      font-weight: 700;
+      margin-bottom: 2rem; }
+    #pricing .text .subtitle {
+      font-size: 1.8rem;
+      color: #9095a7;
+      margin-bottom: 3.5rem; }
+    #pricing .text .btn {
+      color: #fafafa;
+      background-color: #f25f3a;
+      font-size: 1.4rem;
+      padding: 0.5rem 2rem;
+      border-radius: 1.8rem; }
 
 /*# sourceMappingURL=main.css.map */
