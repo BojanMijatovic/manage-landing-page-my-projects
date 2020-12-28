@@ -187,4 +187,65 @@ a {
     font-size: 1.5rem;
     margin: 3rem; }
 
+#simple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f25f3a; }
+  #simple .title {
+    font-size: 3.3rem;
+    text-align: center;
+    color: #ffefeb;
+    padding: 3rem;
+    font-weight: 700; }
+  #simple .btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+    border-radius: 1.8rem;
+    color: #f25f3a;
+    background-color: #fafafa;
+    font-weight: 500;
+    margin: 2rem 0 5rem; }
+
+.footer {
+  background-color: #1d1e25;
+  color: #fafafa; }
+  .footer .input-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem; }
+    .footer .input-form input {
+      border: none;
+      font-size: 1.4rem;
+      color: #9095a7;
+      padding: 0.5rem 0.8rem;
+      border-radius: 1.5rem; }
+    .footer .input-form .btn {
+      margin-left: 2rem;
+      background-color: #f25f3a;
+      color: #fafafa;
+      font-size: 1.4rem;
+      padding: 0.5rem 1.5rem;
+      border-radius: 1.5rem; }
+  .footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem; }
+    .footer .links .item {
+      font-size: 1.4rem;
+      color: #fafafa;
+      margin: 1rem;
+      cursor: pointer; }
+  .footer .icons {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .footer .icons .icon {
+      margin: 1rem 2rem;
+      width: 5%;
+      cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */
