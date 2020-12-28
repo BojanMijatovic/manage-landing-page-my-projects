@@ -7,7 +7,8 @@
 html {
   font-size: 62.5%;
   font-family: 'Be Vietnam', sans-serif;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  background-color: #fafafa; }
 
 ul {
   list-style: none; }
@@ -98,5 +99,53 @@ a {
       font-size: 1.4rem;
       padding: 0.5rem 2rem;
       border-radius: 1.8rem; }
+
+#manage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 6rem; }
+  #manage .text {
+    text-align: center; }
+    #manage .text .title {
+      font-size: 2.5rem;
+      padding: 1rem 10rem;
+      color: #242d52;
+      font-weight: 700; }
+    #manage .text .subtitle {
+      color: #9095a7;
+      font-size: 1.8rem;
+      padding: 2rem;
+      margin-bottom: 2rem; }
+  #manage .list-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    #manage .list-infos .info {
+      margin: 1.5rem 0; }
+      #manage .list-infos .info .title {
+        display: flex;
+        align-items: center;
+        justify-content: baseline;
+        margin: 2rem 0 1rem 2rem;
+        background-color: #ffefeb; }
+        #manage .list-infos .info .title .__btn {
+          background-color: #f25f3a;
+          color: #fafafa;
+          padding: 0.5rem 1.8rem;
+          border-radius: 1.5rem;
+          font-size: 1.5rem; }
+        #manage .list-infos .info .title .__text {
+          background-color: #ffefeb;
+          color: #242d52;
+          font-size: 1.8rem;
+          width: 100%;
+          padding-left: 1.5rem; }
+      #manage .list-infos .info .__description {
+        text-align: left;
+        padding: 2rem;
+        color: #9095a7;
+        font-size: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */
