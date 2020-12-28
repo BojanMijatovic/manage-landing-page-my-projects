@@ -1,6 +1,8 @@
 .footer {
   background-color: $very-dark-blue;
   color: $very-light-gray;
+  display: flex;
+  flex-direction: column;
 
   //  form
   .input-form {
@@ -32,13 +34,14 @@
     align-items: center;
     justify-content: space-around;
     padding: 2rem;
-
-    //  single item
-    .item {
-      font-size: 1.4rem;
-      color: $very-light-gray;
-      margin: 1rem;
-      cursor: pointer;
+    .links-items {
+      //  single item
+      .item {
+        font-size: 1.4rem;
+        color: $very-light-gray;
+        margin: 1rem;
+        cursor: pointer;
+      }
     }
   }
 
@@ -53,5 +56,20 @@
       width: 5%;
       cursor: pointer;
     }
+  }
+
+  //  logo
+  .logo {
+    padding: 3rem;
+    width: 50%;
+    margin: 2rem auto;
+    cursor: pointer;
+  }
+  // copyright
+  .copyright {
+    color: $very-light-gray;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
   }
 }
