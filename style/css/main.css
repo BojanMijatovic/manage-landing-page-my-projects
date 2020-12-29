@@ -340,7 +340,8 @@ a {
     #pricing .text .title {
       font-size: 4rem; }
     #pricing .text .subtitle {
-      font-size: 1.8rem; }
+      font-size: 1.8rem;
+      padding: 3rem 4rem 0; }
     #pricing .text .btn {
       font-size: 2rem;
       margin-top: 2rem; }
