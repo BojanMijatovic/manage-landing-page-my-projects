@@ -1,2 +1,129 @@
+// md media
+@include media-md {
+  // header
+  .header {
+    .nav {
+      .__links {
+        .__link {
+          .__item {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+  }
+  // pricing
+  #pricing {
+    .text {
+      .title {
+        font-size: 6rem;
+        line-height: 1.2;
+      }
+      // subtitle
+      .subtitle {
+        font-size: 2.2rem;
+      }
+      .btn {
+        font-size: 2.2rem;
+      }
+    }
+  }
+  // manage
+  #manage {
+    // text
+    .text {
+      // title
+      .title {
+        font-size: 3.2rem;
+      }
+      .subtitle {
+        font-size: 2rem;
+      }
+    }
+    // list-infos
+    .list-infos {
+      // single info
+      .info {
+        .title {
+          // btn
+          .__btn {
+            font-size: 2rem;
+          }
+          // text
+          .__text {
+            font-size: 2.8rem;
+          }
+        }
+        // description
+        .__description {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  //testimonials
+  #testimonials {
+    .title {
+      font-size: 3.2rem;
+    }
+    //list
+    .list {
+      .item {
+        // user-name
+        .user-name {
+          font-size: 2.5rem;
+        }
+        //info
+        .info {
+          font-size: 2rem;
+        }
+      }
+    }
+    //btn
+    .btn {
+      font-size: 2.2rem;
+    }
+  }
+  //simple
+  #simple {
+    .title {
+      font-size: 5rem;
+      padding: 0 16rem;
+    }
+    .btn {
+      margin-top: 5rem;
+      font-size: 2.2rem;
+    }
+  }
+
+  //footer
+  .footer {
+    .input-form {
+      input {
+        font-size: 2.2rem;
+      }
+      // btn
+      .btn {
+        font-size: 2.2rem;
+      }
+    }
+    //  links
+    .links {
+      align-items: flex-start;
+      .links-items {
+        .item {
+          font-size: 2rem;
+          margin: 3rem;
+        }
+      }
+    }
+    // copyright
+    .copyright {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+//  lg media
 @include media-lg {
 }

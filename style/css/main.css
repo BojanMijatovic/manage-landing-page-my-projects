@@ -31,7 +31,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: green;
+    background-color: #fafafa;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -259,5 +259,56 @@ a {
     font-size: 1.2rem;
     text-align: center;
     padding: 2rem; }
+
+@media only screen and (min-width: 768px) {
+  .header .nav .__links .__link .__item {
+    font-size: 3rem; }
+
+  #pricing .text .title {
+    font-size: 6rem;
+    line-height: 1.2; }
+  #pricing .text .subtitle {
+    font-size: 2.2rem; }
+  #pricing .text .btn {
+    font-size: 2.2rem; }
+
+  #manage .text .title {
+    font-size: 3.2rem; }
+  #manage .text .subtitle {
+    font-size: 2rem; }
+  #manage .list-infos .info .title .__btn {
+    font-size: 2rem; }
+  #manage .list-infos .info .title .__text {
+    font-size: 2.8rem; }
+  #manage .list-infos .info .__description {
+    font-size: 1.8rem; }
+
+  #testimonials .title {
+    font-size: 3.2rem; }
+  #testimonials .list .item .user-name {
+    font-size: 2.5rem; }
+  #testimonials .list .item .info {
+    font-size: 2rem; }
+  #testimonials .btn {
+    font-size: 2.2rem; }
+
+  #simple .title {
+    font-size: 5rem;
+    padding: 0 16rem; }
+  #simple .btn {
+    margin-top: 5rem;
+    font-size: 2.2rem; }
+
+  .footer .input-form input {
+    font-size: 2.2rem; }
+  .footer .input-form .btn {
+    font-size: 2.2rem; }
+  .footer .links {
+    align-items: flex-start; }
+    .footer .links .links-items .item {
+      font-size: 2rem;
+      margin: 3rem; }
+  .footer .copyright {
+    font-size: 1.8rem; } }
 
 /*# sourceMappingURL=main.css.map */
