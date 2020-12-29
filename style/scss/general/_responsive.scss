@@ -126,4 +126,103 @@
 
 //  lg media
 @include media-lg {
+  // header
+  .header {
+    .nav {
+      justify-content: space-between;
+      align-items: center;
+      // logo
+      .logo {
+        .img-logo {
+          margin-top: 3rem;
+        }
+      }
+      // links
+      .__links {
+        position: relative;
+        left: 0%;
+        flex-direction: row;
+        background: none;
+        width: 70%;
+        margin-top: 1.5rem;
+        // link
+        .__link {
+          .__item {
+            font-size: 2rem;
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      //  burger menu
+      .burger-menu {
+        display: none;
+      }
+      .nav-open {
+        transform: none;
+      }
+    }
+  }
+
+  //pricing
+  #pricing {
+    background-size: contain;
+    background-position: top right;
+    flex-direction: row-reverse;
+    // text
+    .text {
+      .title {
+        font-size: 4rem;
+      }
+      .subtitle {
+        font-size: 1.8rem;
+      }
+      .btn {
+        font-size: 2rem;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  //testimonials
+  #testimonials {
+    .list {
+      flex-direction: row;
+      align-items: flex-start;
+      // item
+      .item {
+        .info {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  //simple
+  #simple {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .title {
+      font-size: 3rem;
+      padding: 0;
+      margin-right: 2rem;
+    }
+    .btn {
+      font-size: 1.8rem;
+    }
+  }
+
+  //footer
+  .footer {
+    .icons {
+      .icon {
+        width: 4%;
+      }
+    }
+    .logo {
+      width: 40%;
+    }
+  }
 }

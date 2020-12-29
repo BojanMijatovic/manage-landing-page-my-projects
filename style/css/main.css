@@ -310,5 +310,61 @@ a {
       margin: 3rem; }
   .footer .copyright {
     font-size: 1.8rem; } }
+@media screen and (min-width: 1024px) {
+  .header .nav {
+    justify-content: space-between;
+    align-items: center; }
+    .header .nav .logo .img-logo {
+      margin-top: 3rem; }
+    .header .nav .__links {
+      position: relative;
+      left: 0%;
+      flex-direction: row;
+      background: none;
+      width: 70%;
+      margin-top: 1.5rem; }
+      .header .nav .__links .__link .__item {
+        font-size: 2rem;
+        text-decoration: none; }
+        .header .nav .__links .__link .__item:hover {
+          text-decoration: underline; }
+    .header .nav .burger-menu {
+      display: none; }
+    .header .nav .nav-open {
+      transform: none; }
+
+  #pricing {
+    background-size: contain;
+    background-position: top right;
+    flex-direction: row-reverse; }
+    #pricing .text .title {
+      font-size: 4rem; }
+    #pricing .text .subtitle {
+      font-size: 1.8rem; }
+    #pricing .text .btn {
+      font-size: 2rem;
+      margin-top: 2rem; }
+
+  #testimonials .list {
+    flex-direction: row;
+    align-items: flex-start; }
+    #testimonials .list .item .info {
+      font-size: 1.5rem; }
+
+  #simple {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    #simple .title {
+      font-size: 3rem;
+      padding: 0;
+      margin-right: 2rem; }
+    #simple .btn {
+      font-size: 1.8rem; }
+
+  .footer .icons .icon {
+    width: 4%; }
+  .footer .logo {
+    width: 40%; } }
 
 /*# sourceMappingURL=main.css.map */

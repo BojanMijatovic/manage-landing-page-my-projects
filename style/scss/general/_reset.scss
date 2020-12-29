@@ -31,7 +31,7 @@ a {
 
 // large
 @mixin media-lg {
-  @media screen and(min-width: 1200px) {
+  @media screen and(min-width: 1024px) {
     @content;
   }
 }
